@@ -18,4 +18,5 @@ const shortUrlSchema = new mongoose.Schema({
     }
 })
 
+//link mongo to front-end
 module.exports = mongoose.model('ShortUrl', shortUrlSchema)
