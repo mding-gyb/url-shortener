@@ -2,19 +2,17 @@ const express = require('express')
 const mongoose = require('mongoose')
 const ShortUrl = require('./models/shortUrl')
 const app = express()
-const get_url
-const hyperlink
 
 //old
-get_url = "enter URL"
-hyperlink = "compress"
+const get_url = "enter URL"
+const hyperlink= "compress"
 
 //connect mongo
 mongoose.connect('mongodb://localhost/5000', {
     useNewUrlParser: true, useUnifiedTopology: true
 });
 
-
+// set up app
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 
